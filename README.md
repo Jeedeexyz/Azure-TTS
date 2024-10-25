@@ -40,7 +40,7 @@ AudioVisualizer is a web application that uses Azure Text-to-Speech (TTS) to syn
 1. **Clone the Repository**:
 
    ```sh
-   git clone https://github.com/yourusername/AudioVisualizer.git
+   git clone https://github.com/Jeedeexyz/Azure-TTS.git
    cd AudioVisualizer
    ```
 
