@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Azure TTS and Frequency Analyzer</title>
+    <style>
+      #visualizer {
+        width: 100%;
+        height: 200px;
+        display: flex;
+      }
+      .bar {
+        flex: 1;
+        margin: 1px;
+        background-color: #4caf50;
+        height: 10px;
+      }
+      .input-container {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+      }
+      .input-container input {
+        width: 30%;
+      }
+      #playBtn,
+      #pauseBtn {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Azure Text to Speech & Frequency Visualizer</h1>
+    <div class="input-container">
+      <label>Add your subscription Key</label>
+      <input type="text" id="subscriptionKey" placeholder="Add the key" />
+      <label> Add your region </label>
+      <input type="text" id="region" placeholder="Add region" />
+    </div>
+    <input type="text" id="textInput" placeholder="Enter text" />
+    <button id="synthesizeBtn">Synthesize</button>
+    <button id="playBtn">Play</button>
+    <button id="pauseBtn">Pause</button>
+    <div id="visualizer"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/microsoft-cognitiveservices-speech-sdk/distrib/browser/microsoft.cognitiveservices.speech.sdk.bundle-min.js"></script>
+    <script src="AudioVisualizerScript.js"></script>
+  </body>
+</html>
